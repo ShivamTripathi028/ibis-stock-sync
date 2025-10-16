@@ -35,6 +35,7 @@ const Layout = ({ children }: LayoutProps) => {
 
   const navItems = [
     { icon: LayoutDashboard, label: "Dashboard", path: "/dashboard" },
+    { icon: Building2, label: "Companies", path: "/companies" },
     { icon: Package, label: "Shipments", path: "/shipments" },
     { icon: Building2, label: "Company Orders", path: "/company-orders" },
     { icon: ShoppingCart, label: "Amazon Inventory", path: "/amazon-inventory" },
