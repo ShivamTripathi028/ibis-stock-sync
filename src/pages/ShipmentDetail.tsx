@@ -325,7 +325,7 @@ const ShipmentDetail = () => {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="destinationType">Requested By *</Label>
+                      <Label htmlFor="destinationType">Destination Type *</Label>
                       <Select
                         value={destinationType}
                         onValueChange={(value: "company" | "amazon") =>
@@ -336,14 +336,14 @@ const ShipmentDetail = () => {
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="company">Company</SelectItem>
-                          <SelectItem value="amazon">Amazon Stock</SelectItem>
+                          <SelectItem value="company">For a Company</SelectItem>
+                          <SelectItem value="amazon">For Amazon Stock</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
                     {destinationType === "company" && (
                       <div className="space-y-2">
-                        <Label htmlFor="company">Company *</Label>
+                        <Label htmlFor="company">Select Company *</Label>
                         <Select value={companyId} onValueChange={setCompanyId}>
                           <SelectTrigger>
                             <SelectValue placeholder="Select a company" />
